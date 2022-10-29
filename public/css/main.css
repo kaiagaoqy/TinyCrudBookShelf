@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'League Spartan', sans-serif;
+    padding: 7.5rem 2.5rem 10rem 2.5rem;
+    background-image: url(images/bg-pattern-bottom-mobile.svg), url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, left top;
+}
+
+main{
+    max-width: 111rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button.reviews{
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+/* Main Text */
+
+h1{
+    margin: 0 auto;
+    font-size: 4rem;
+    max-width: 35rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 2.2rem;
+}
+
+.main-text p{
+    margin: 0 auto;
+    font-size: 1.7rem;
+    max-width: 41.5rem;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 4rem;
+    line-height: 2.5rem;
+}
+
+/* Review Section */
+
+.reviews{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 54rem;
+    margin-bottom: 5rem;
+}
+
+.review{
+    width: 100%;
+    max-width: 44.5rem;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.review p{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+/* Quotes Section */
+
+.quotes{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    gap: 1.5rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.quote{
+    margin: 0 auto;
+    max-width: 35rem;
+    background-color: hsl(300, 43%, 22%);
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.quotes img{
+    width: 4rem;
+    border-radius: 3rem;
+}
+
+.quote-text{
+    text-align: left;
+    line-height: 2rem;
+}
+
+/* Desktop Responsive */
+
+@media all and (min-width: 770px){
+
+    /* General */
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right bottom, left top;
+        background-size: 80%, 60%;
+    }
+
+    /* Top Part */
+
+    .split{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .main-text{
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    h1{
+        margin: 0 0 2.5rem 0;
+        font-size: 5rem;
+    }
+
+    .reviews{
+        margin: 0;
+    }
+
+    .review{
+        padding: 2rem 3rem;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .review-1{
+        align-self:flex-start;
+    }
+    .review-2{
+        align-self:center;
+    }
+    .review-3{
+        align-self:flex-end;
+    }
+
+    /* Bottom Part */
+
+    .quotes{
+        width: 100%;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .quote-2{
+        transform: translateY(1.5rem);
+    }
+    .quote-3{
+        transform: translateY(3rem);
+    }
+
+    .quote-text{
+        font-size: 1.5rem;
+    }
+
+}
