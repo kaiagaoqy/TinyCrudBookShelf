@@ -1,7 +1,12 @@
 # Tiny-CRUD-BookShelf
+It is a small RESTful project to realize a CRUD bookshelf with Node.js.
+
+The user enters a favorite book name, clicks on the button, and the book name gets stored in a database. Then it redirects to a page (or uses the same page) to show the list of all favorite books stored in the database.
+
 ## Stack
 1. Framework: Node.js, express, ejs
 2. DataBase: MongoDB
+3. Frontend: BootStrap
 
 
 ## Deployment
