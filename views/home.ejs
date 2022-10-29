@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>My BookStore | Qingying Gao</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <main>
+
+      <div class="split">
+
+        <!-- Main Text of the Page -->
+        <section class="main-text">
+
+          <h1>View and Add your favorite books HERE!</h1>
+          <p>It is a course project developed by Qingying Gao (qgao14) </p>
+
+        </section>
+
+        <!-- Reviews Section on the Page -->
+        <section class="reviews">
+        <form action="/view" method="get">
+          <button class="reviews" onclick="this.form.submit()">
+          <div class="review review-1">
+          
+            <div class="stars">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+            </div>
+            <p>Click to view all books</p>
+            
+          </div>
+        </button>
+        </form>
+
+          
+          <form action="/add" method="get">
+              <button class="reviews" onclick="this.form.submit()">
+                <div class="review review-2">
+            <div class="stars">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+              <img src="img/icon-star.svg" alt="star icon">
+            </div>
+            <p>Click to add a new book</p>
+            </button>
+          </form>
+          </div>
+
+          
+
+        </section>
+
+    </div>
+
+      <!-- Quotes Section on the Page -->
+      <section class="quotes">
+
+        <div class="quote quote-1">
+
+          <div class="username">
+            <img src="img/little_prince.png" alt="image-prince">
+            <div class="name">
+              <p>The Little Prince </p>
+              <p class="verified"> Antoine de Saint-Exupéry</p>
+            </div>
+          </div>
+
+          <p class="quote-text">"In certain more important details I shall make mistakes, also. But that is something that will not be my fault. My friend never explained anything to me. He thought, perhaps, that I was like himself. But I, alas, do not know how to see sheep through the walls of boxes. Perhaps I am a little like the grown-ups. I have had to grow old"</p>
+
+        </div>
+
+        <div class="quote quote-2">
+
+          <div class="username">
+            <img src="img/agatha.png" alt="image-agatha">
+            <div class="name">
+              <p>And Then There Were None </p>
+              <p class="verified">Agatha Christie</p>
+            </div>
+          </div>
+
+          <p class="quote-text">"First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate."</p>
+
+        </div>
+
+        <div class="quote quote-3">
+
+          <div class="username">
+            <img src="img/yellow.png" alt="image-yellow-wall">
+            <div class="name">
+              <p>The Yellow Wall-Paper </p>
+              <p class="verified">Charlotte Perkins Gilman</p>
+            </div>
+          </div>
+
+          <p class="quote-text">"A woman and her husband rent a summer house, but what should be a restful getaway turns into a suffocating psychological battle. This chilling account of postpartum depression and a husband's controlling behavior in the guise of treatment will leave you breathless"</p>
+
+        </div>
+
+      </section>
+
+    </main>
+    
+    
+    
+    
+    
+    
+
+  </body>
+</html>
