@@ -5,6 +5,7 @@
 
 
 ## Deployment
+### Node.js
  "dependencies": {
     "body-parser": "^1.20.0",    
     "ejs": "^3.1.8",    
@@ -21,7 +22,26 @@ npm i mongoose
 npm i lodash
 npm i ejs
 ```    
+### MongoDB
+1. Download MongoDB locally and install Mongosh
+ * [how to download mongoDb on Windows](https://www.mongodb.com/docs/manual/installation/)
+ * [how to download mongoDb on MacOS](https://blog.londonappbrewery.com/how-to-download-install-mongodb-on-mac-2895ccd2b5c1)
+2. Test your Mdatabase
+ * Run `mongosh` without any command-line options to connect to a MongoDB instance running on your localhost with default port 27017:
+ * This is equivalent to the following command:
+ ``` bash
+ $ mongosh "mongodb://localhost:27017"
+ ```
+ 
+ [More detail to initiate MongoDB](https://www.mongodb.com/docs/mongodb-shell/connect/#std-label-mdb-shell-connect)
+
 ## Run
+1. Initiate Database
+ * This project use default local port
+``` bash
+$ mongosh
+```
+2. Run main code
 ``` js
 node main.js
 ```
